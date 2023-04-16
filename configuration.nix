@@ -10,7 +10,9 @@ in
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-    ];
+      ./mastodon.nix
+      ./uptime-kuma.nix
+   ];
 
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
@@ -84,6 +86,8 @@ in
     wget
     nano
     git
+    htop
+    glances
   ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
