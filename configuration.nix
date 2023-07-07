@@ -12,6 +12,7 @@ in
       ./hardware-configuration.nix
       ./mastodon.nix
       ./uptime-kuma.nix
+      ./headscale.nix
    ];
 
   # Use the GRUB 2 boot loader.
